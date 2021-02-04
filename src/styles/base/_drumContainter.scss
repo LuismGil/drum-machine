@@ -1,0 +1,116 @@
+h1,
+h2,
+h3,
+h4 {
+  color: $bright-blue;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container__display {
+  background-color: $black;
+  border: 3px solid $darken-blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 30px auto;
+  width: 320px;
+}
+
+.container__display__keys {
+  -ms-flex-line-pack: center;
+  align-content: center;
+  background-color: $white;
+  border-radius: 10px;
+  font-size: 40px;
+  height: 80px;
+  margin: 7px;
+  padding: 5px;
+  text-align: center;
+  width: 80px;
+
+  &:hover {
+    background-color: $lighten-blue;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateY(-1px);
+    -ms-transform: translateY(-1px);
+    transform: translateY(-1px);
+  }
+
+  &:hover::after {
+    opacity: 0;
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+    -ms-transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.6);
+  }
+}
+
+.container__display__message {
+  background-color: $white;
+  border: 3px solid $darken-blue;
+  color: $darken-blue;
+  height: 50px;
+  margin: 20px auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 320px;
+}
+
+.container__display__message--text {
+  margin-top: 10px;
+}
+
+footer {
+  color: $bright-blue;
+  margin: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container__display,
+  .container__display__message {
+    width: 350px;
+  }
+
+  .container__display__message--text {
+    font-size: 18px;
+  }
+
+  .container__display__keys {
+    font-size: 50px;
+    height: 85px;
+    width: 80px;
+  }
+}
+
+@media (min-width: 991px) {
+  .container__display,
+  .container__display__message {
+    width: 400px;
+  }
+
+  .container__display__message--text {
+    font-size: 20px;
+  }
+
+  .container__display__keys {
+    font-size: 60px;
+    height: 100px;
+    width: 100px;
+  }
+}

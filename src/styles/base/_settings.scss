@@ -1,0 +1,8 @@
+// Colors: Reactjs palet
+
+$black: #222222;
+$bright-blue: #00d8ff;
+$white: #ffffff;
+$lighten-black: lighten($black, 5%);
+$darken-blue: darken($bright-blue, 10%);
+$lighten-blue: lighten($bright-blue, 10%);
